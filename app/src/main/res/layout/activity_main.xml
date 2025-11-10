@@ -47,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/cart_icon" />
 
-    <androidx.appcompat.widget.AppCompatButton
+    <Button
         android:id="@+id/start_shopping_button"
         android:layout_width="0dp"
         android:layout_height="60dp"
