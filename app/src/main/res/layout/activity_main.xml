@@ -8,12 +8,59 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/cart_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="60dp"
+        android:text="Cart"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/cart_icon"
+        android:layout_width="68.81dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="167dp"
+        android:src="@drawable/cart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_title"
+        android:contentDescription="Shopping Cart Icon"
+        app:tint="#F79F1F"/>
+
+    <TextView
+        android:id="@+id/cart_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:textAlignment="center"
+        android:text="Discusses The Factors That Make A Logo Successful By Analyzing The Research, Brainstorming, Sketching, And Stylistic Experiments That Led To Its Development"
+        android:textColor="#5B5959"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cart_icon" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/start_shopping_button"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#FF9900"
+        android:text="start shopping"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cart_description" />
 </androidx.constraintlayout.widget.ConstraintLayout>
